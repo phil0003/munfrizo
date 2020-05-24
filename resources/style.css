@@ -1,0 +1,916 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #383838;
+}
+
+#particles-js {
+    background-color: #383838;
+    height: 100vh;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #292929;
+    position: fixed;
+    width: 80%;
+    z-index: 100;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+header .logo:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.navlinks {
+    list-style: none;
+}
+
+.navlinks li {
+    display: inline-block;
+    padding: 0px 20px; 
+}
+
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+    color: #0099ff;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px;
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+.videos {
+    width: 75%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.videos video {
+    margin: 10px 10px;
+    border: 6px solid rgba(0, 153, 255, 0.65);
+    border-radius: 25px;
+}
+
+.guden {
+    position: absolute;
+    width: 800px;
+    height: 200px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.guden h1 {
+    text-transform: uppercase;
+    color: #0099ff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 34px;
+    text-shadow: 4px 4px blue;
+}
+
+.information {
+    width: 1200px;
+    height: 600px;
+    background-color: #292929;
+    position: absolute;
+    left: 19%;
+    top: 25%;
+    border-radius: 25px;
+}
+
+.information .discord .logo img{
+    height: 160px;
+    width: 160px;
+    position: absolute;
+    left: 14rem;
+    top: 5%;
+}
+
+.information .discord .logo img:hover{
+    transition: all 0.3s ease 0s;
+    opacity: 0.8;
+}
+
+.information .discord h1, p {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.information .discord h1 {
+    position: absolute;
+    top: 33%;
+    left: 11rem;
+}
+
+.information .discord p {
+    position: absolute;
+    top: 45%;
+    left: 11rem;
+    width: 250px;
+    height: 400px;
+    text-align: center;
+}
+
+.information .discord .divider {
+    height: 550px;
+    width: 5px;
+    background-color: #777777;
+    position: absolute;
+    left: 50%;
+    top: 4%;
+    border-radius: 20px;
+}
+
+.information .youtube .logo img {
+    position: absolute;
+    left: 56em;
+    top: 12.5%;
+}
+
+.information .youtube h1, p {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.information .youtube h1 {
+    position: absolute;
+    left: 49.25rem;
+    top: 33%;
+}
+
+.information .youtube p {
+    position: absolute;
+    left: 48.5rem;
+    top: 45%;
+    width: 250px;
+    height: 400px;
+    text-align: center;
+}
+
+body .contact-title {
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    left: 42.5%;
+    top: 25%;
+    transform: translate(-15%, -50%);
+    text-transform: uppercase;
+    background-color: rgba(0, 153, 255, 0.5);
+    padding: 15px 15px;
+    border-radius: 25px;
+}
+
+body .contact-title h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+body .contact-title h2 {
+    font-size: 20px;
+}
+
+body .contact-form {
+    position: absolute;
+    left: 51%;
+    top: 60%;
+    text-align: center;
+    transform: translate(-50%, -50%)
+}
+
+form {
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+
+.form-control {
+    width: 800px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    background: #0099ff;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+form .submit:hover {
+    transition: all 0.3s ease 0s;
+    background: #0084ff;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: Clip;
+    src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+  }
+  
+    body {
+    background-color: #141114;
+    background-image: linear-gradient(335deg, black 23px, transparent 23px),
+      linear-gradient(155deg, black 23px, transparent 23px),
+      linear-gradient(335deg, black 23px, transparent 23px),
+      linear-gradient(155deg, black 23px, transparent 23px);
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+  }
+  
+  .guden {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 2;
+    left: 50%;
+    top: 50%;
+    font-family: "Clip";
+    text-transform: uppercase;
+    font-size: 6em;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #e6efff, 0 0 1.5rem #658eff,
+      -0.2rem 0.1rem 1rem #6596ff, 0.2rem 0.1rem 1rem #6596ff,
+      0 -0.5rem 2rem #2483ff, 0 0.5rem 3rem #2471ff;
+    animation: shine 2s forwards, flicker 3s infinite;
+  }
+  
+  @keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #e6efff, 0 0 1.5rem #658eff,
+      -0.2rem 0.1rem 1rem #6596ff, 0.2rem 0.1rem 1rem #6596ff,
+      0 -0.5rem 2rem #2483ff, 0 0.5rem 3rem #2471ff;
+    }
+    28%,
+    33% {
+      color: #658eff;
+      text-shadow: none;
+    }
+    82%,
+    97% {
+      color: #2469ff;
+      text-shadow: none;
+    }
+  }
+  
+  .flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+  }
+  
+  .fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      color: #6b1839;
+      text-shadow: none;
+    }
+    100% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #e6efff, 0 0 1.5rem #658eff,
+      -0.2rem 0.1rem 1rem #6596ff, 0.2rem 0.1rem 1rem #6596ff,
+      0 -0.5rem 2rem #2483ff, 0 0.5rem 3rem #2471ff;
+    }
+  }
+  
+  @keyframes flicker {
+    from {
+      opacity: 1;
+    }
+  
+    4% {
+      opacity: 0.9;
+    }
+  
+    6% {
+      opacity: 0.85;
+    }
+  
+    8% {
+      opacity: 0.95;
+    }
+  
+    10% {
+      opacity: 0.9;
+    }
+  
+    11% {
+      opacity: 0.922;
+    }
+  
+    12% {
+      opacity: 0.9;
+    }
+  
+    14% {
+      opacity: 0.95;
+    }
+  
+    16% {
+      opacity: 0.98;
+    }
+  
+    17% {
+      opacity: 0.9;
+    }
+  
+    19% {
+      opacity: 0.93;
+    }
+  
+    20% {
+      opacity: 0.99;
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    26% {
+      opacity: 0.94;
+    }
+  
+    28% {
+      opacity: 0.98;
+    }
+  
+    37% {
+      opacity: 0.93;
+    }
+  
+    38% {
+      opacity: 0.5;
+    }
+  
+    39% {
+      opacity: 0.96;
+    }
+  
+    42% {
+      opacity: 1;
+    }
+  
+    44% {
+      opacity: 0.97;
+    }
+  
+    46% {
+      opacity: 0.94;
+    }
+  
+    56% {
+      opacity: 0.9;
+    }
+  
+    58% {
+      opacity: 0.9;
+    }
+  
+    60% {
+      opacity: 0.99;
+    }
+  
+    68% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.9;
+    }
+  
+    72% {
+      opacity: 0.95;
+    }
+  
+    93% {
+      opacity: 0.93;
+    }
+  
+    95% {
+      opacity: 0.95;
+    }
+  
+    97% {
+      opacity: 0.93;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @media only screen and (min-width: 1921px) {
+    .videos {
+        width: 75%;
+        height: 50%;
+        position: absolute;
+        top: 65%;
+        left: 61.5%;
+        transform: translate(-50%, -61.5%);
+    }
+
+    .youtube .logo img{
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        transform: translate(-50%, -15%);
+    }
+
+    .youtube .logo img:hover{
+        opacity: 0.8;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+
+    .youtube .yttext {
+        position: absolute;
+        top: 20%;
+        left: 37%;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        font-size: 22px;
+        padding: 10px 20px;
+        border: 5px dashed red;
+        border-radius: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 1920px) {
+    
+    .videos {
+        width: 58%;
+        position: absolute;
+        left: 64.5%;
+    }
+
+    .videos video {
+        width: 510px;
+        height: 290px;
+    }
+
+    .youtube .logo img{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -15%);
+        height: 100px;
+        width: 200px;
+    }
+    
+    .youtube .logo img:hover{
+        opacity: 0.8;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    
+    .youtube .yttext {
+        position: absolute;
+        top: 42.5%;
+        left: 5%;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        font-size: 20px;
+        padding: 10px 20px;
+        border-radius: 25px;
+        width: 400px;
+        height: 150px;
+        text-align: center;
+    }
+    
+    .box_around {
+        height: 630px;
+        width: 500px;
+        background-color: #292929;
+        position: absolute;
+        top: 26%;
+        left: 9%;
+        border-radius: 25px;
+    }
+}
+
+@media only screen and (max-width: 1875px) {
+
+    .videos {
+        position: absolute;
+        left: 67.5%;
+    }
+
+    .videos video {
+        width: 375px;
+        height: 210px;
+    }
+
+    .box_around {
+        height: 465px;
+        width: 400px;
+        background-color: #292929;
+        position: absolute;
+        top: 26%;
+        left: 16%;
+        border-radius: 25px;
+    }
+
+    .youtube .yttext {
+        width: 350px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav .navlinks li {
+        margin: 20px auto;
+        display: inline;
+        padding: 0px 15px;
+    }
+
+    header .logo {
+        display: none;
+    }
+    
+    body {
+        background-color: #292929;
+    }
+    
+    .videos video {
+        visibility: hidden;
+    }
+
+    .guden {
+        visibility: hidden;
+    }
+
+    button {
+        padding: 9px 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .videos video {
+        visibility: hidden;
+    }
+
+    .box_around {
+        position: absolute;
+        left: 27.5%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .videos video {
+        width: 270px;
+        height: 150px;
+    }
+
+    .box_around {
+        width: 250px;
+        height: 352px;
+    }
+
+    .youtube .yttext {
+        font-size: 16px;
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1875px) {
+    .videos {
+        position: absolute;
+        left: 70%;
+    }
+
+    .box_around {
+        position: absolute;
+        left: 5%;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 0px) {
+    .information .discord .logo img{
+        height: 160px;
+        width: 160px;
+        position: absolute;
+        left: 4.5rem;
+        top: 40%;
+    }
+
+    .information .discord h1 {
+        visibility: hidden;
+    }
+    
+    .information .discord p {
+        visibility: hidden;
+    }
+    
+    .information .discord .divider {
+        visibility: hidden;
+    }
+    
+    .information .youtube .logo img {
+        position: absolute;
+        left: 9.5rem;
+        top: 12.5%;
+    }
+    
+    .information .youtube h1 {
+        visibility: hidden;
+    }
+    
+    .information .youtube p {
+        visibility: hidden;
+    }
+
+    .information {
+        height: 400px;
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 1921px) {
+    .information .discord .logo img{
+        height: 160px;
+        width: 160px;
+        position: absolute;
+        left: 14rem;
+        top: 5%;
+    }
+    
+    .information .discord .logo img:hover{
+        transition: all 0.3s ease 0s;
+        opacity: 0.8;
+    }
+    
+    .information .discord h1, p {
+        font-family: "Montserrat", sans-serif;
+        color: white;
+    }
+    
+    .information .discord h1 {
+        position: absolute;
+        top: 33%;
+        left: 11rem;
+    }
+    
+    .information .discord p {
+        position: absolute;
+        top: 45%;
+        left: 11rem;
+        width: 250px;
+        height: 400px;
+        text-align: center;
+    }
+    
+    .information .discord .divider {
+        height: 550px;
+        width: 5px;
+        background-color: #777777;
+        position: absolute;
+        left: 50%;
+        top: 4%;
+        border-radius: 20px;
+    }
+    
+    .information .youtube .logo img {
+        position: absolute;
+        left: 56em;
+        top: 12.5%;
+    }
+    
+    .information .youtube h1, p {
+        font-family: "Montserrat", sans-serif;
+        color: white;
+    }
+    
+    .information .youtube h1 {
+        position: absolute;
+        left: 49.25rem;
+        top: 33%;
+    }
+    
+    .information .youtube p {
+        position: absolute;
+        left: 48.5rem;
+        top: 45%;
+        width: 250px;
+        height: 400px;
+        text-align: center;
+    }
+
+    .information {
+        position: absolute;
+        left: 42.5rem;
+        top: 25rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+    .information .discord .logo img{
+        height: 160px;
+        width: 160px;
+        position: absolute;
+        left: 14rem;
+        top: 5%;
+    }
+    
+    .information .discord .logo img:hover{
+        transition: all 0.3s ease 0s;
+        opacity: 0.8;
+    }
+    
+    .information .discord h1, p {
+        font-family: "Montserrat", sans-serif;
+        color: white;
+    }
+    
+    .information .discord h1 {
+        position: absolute;
+        top: 33%;
+        left: 11rem;
+    }
+    
+    .information .discord p {
+        position: absolute;
+        top: 45%;
+        left: 11rem;
+        width: 250px;
+        height: 400px;
+        text-align: center;
+    }
+    
+    .information .discord .divider {
+        height: 550px;
+        width: 5px;
+        background-color: #777777;
+        position: absolute;
+        left: 50%;
+        top: 4%;
+        border-radius: 20px;
+    }
+    
+    .information .youtube .logo img {
+        position: absolute;
+        left: 56em;
+        top: 12.5%;
+    }
+    
+    .information .youtube h1, p {
+        font-family: "Montserrat", sans-serif;
+        color: white;
+    }
+    
+    .information .youtube h1 {
+        position: absolute;
+        left: 49.25rem;
+        top: 33%;
+    }
+    
+    .information .youtube p {
+        position: absolute;
+        left: 48.5rem;
+        top: 45%;
+        width: 250px;
+        height: 400px;
+        text-align: center;
+    }
+
+    .information {
+        position: absolute;
+        left: 20.75rem;
+        top: 25rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .information .discord .logo img{
+        height: 160px;
+        width: 160px;
+        position: absolute;
+        left: 14rem;
+        top: 5%;
+    }
+    
+    .information .discord .logo img:hover{
+        transition: all 0.3s ease 0s;
+        opacity: 0.8;
+    }
+    
+    .information .discord h1, p {
+        font-family: "Montserrat", sans-serif;
+        color: white;
+    }
+    
+    .information .discord h1 {
+        position: absolute;
+        top: 33%;
+        left: 11rem;
+    }
+    
+    .information .discord p {
+        position: absolute;
+        top: 45%;
+        left: 11rem;
+        width: 250px;
+        height: 400px;
+        text-align: center;
+    }
+    
+    .information .discord .divider {
+        height: 550px;
+        width: 5px;
+        background-color: #777777;
+        position: absolute;
+        left: 50%;
+        top: 4%;
+        border-radius: 20px;
+    }
+    
+    .information .youtube .logo img {
+        position: absolute;
+        left: 56em;
+        top: 12.5%;
+    }
+    
+    .information .youtube h1, p {
+        font-family: "Montserrat", sans-serif;
+        color: white;
+    }
+    
+    .information .youtube h1 {
+        position: absolute;
+        left: 49.25rem;
+        top: 33%;
+    }
+    
+    .information .youtube p {
+        position: absolute;
+        left: 48.5rem;
+        top: 45%;
+        width: 250px;
+        height: 400px;
+        text-align: center;
+    }
+
+    .information {
+        position: absolute;
+        left: 12rem;
+        top: 25rem;
+    }
+}
